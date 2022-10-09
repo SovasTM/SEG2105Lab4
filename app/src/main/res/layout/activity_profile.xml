@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/avatarSelectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a New Avatar"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="80sp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:columnCount="3"
+            app:rowCount="2">
+
+            <ImageView
+                android:id="@+id/team1Image"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_margin="10dp"
+                android:onClick="SetTeamIcon"
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/team1" />
+
+            <ImageView
+                android:id="@+id/team2Image"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_margin="10dp"
+                android:onClick="SetTeamIcon"
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/team2" />
+
+            <ImageView
+                android:id="@+id/team3Image"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_margin="10dp"
+                android:onClick="SetTeamIcon"
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/team3" />
+
+            <ImageView
+                android:id="@+id/team4Image"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_margin="10dp"
+                android:onClick="SetTeamIcon"
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/team4" />
+
+            <ImageView
+                android:id="@+id/team5Image"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_margin="10dp"
+                android:onClick="SetTeamIcon"
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/team5" />
+
+            <ImageView
+                android:id="@+id/teamUnknownImage"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_margin="10dp"
+                android:onClick="SetTeamIcon"
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/teamunknown" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40sp" />
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="Load From Phone" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
